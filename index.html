@@ -1,89 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Code Quiz</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1>Code Quiz</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet saepe blanditiis ut voluptates deserunt molestiae, atque earum soluta nostrum reiciendis, corporis, vero voluptatibus aliquid sit? Tempore ad nulla similique voluptates!
-        </p>
-        <button class="start-button">Start</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Code Quiz</title>
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>JavaScript Quiz</h1>
+      <p>
+        You have 30 seconds to answer ten multiple choice questions about JavaScript. Answer incorrectly and
+        the clock ticks down faster. Can you get the perfect score?
+      </p>
+      <button class="start-button">Start</button>
+    </section>
+    <h2>Time Remaining: <span class="timer-count">30</span></h2>
+  </header>
+  <main>
+    <section class="questions">
+      <h2 class="question"></h2>
+      <div class="answer-buttons">
+        <button class="answer-button">ARE</button>
+        <br>
+        <button class="answer-button">YOU</button>
+        <br>
+        <button class="answer-button">READY</button>
+        <br>
+        <button class="answer-button">TO PLAY?</button>
       </div>
-      <div>Time: <span class="timer-count">60</span></div>
-    </header>
-    <main>
-      <section class="leaderboard">
-        <h2>Leaderboard</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name">
-          <button class="submit-button">Submit</button>
-        </form>
-      </section>
-      <section class="questions">
-        <div>
-          <h2>Question 1</h2>
-          <ol>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="correct">Correct Answer</button></li>
-          </ol>
-        </div>
-        <div>
-          <h2>Question 2</h2>
-          <ol>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="correct">Correct Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-          </ol>
-        </div>
-        <div>
-          <h2>Question 3</h2>
-          <ol>
-            <li><button class="correct">Correct Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-          </ol>
-        </div>
-        <div>
-          <h2>Question 4</h2>
-          <ol>
-            <li><button class="correct">Correct Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-          </ol>
-        </div>
-        <div>
-          <h2>Question 5</h2>
-          <ol>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="correct">Correct Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-          </ol>
-        </div>
-        <div>
-          <h2>Question 6</h2>
-          <ol>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="incorrect">Incorrect Answer</button></li>
-            <li><button class="correct">Correct Answer</button></li>
-          </ol>
-        </div>
-      </section>
-    </main>
-    <script src="assets/scripts/script.js"></script>
-  </body>
+      <h2 class="score"></h2>
+      <p class="answer-message"></p>
+    </section>
+    <section class="submit-score">
+      <form>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <button class="submit-button">Submit Score</button>
+      </form>
+    </section>
+    <section class="scoreboard">
+      <h2>Scoreboard</h2>
+      <ol></ol>
+    </section>
+  </main>
+  <script src="assets/scripts/script.js"></script>
+</body>
+
 </html>

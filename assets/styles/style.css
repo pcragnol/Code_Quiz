@@ -1,1 +1,50 @@
 /* CSS */
+:root {
+  --textBright: rgba(75, 245, 103);
+  --textAlternate: rgb(255, 178, 13);
+  --backgroundDark: rgb(49, 49, 49);
+}
+
+body {
+  background-color: var(--backgroundDark);
+  color: var(--textBright);
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h1,h2,li {
+  font-family: 'Press Start 2P', monospace;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.question {
+  font-size: 24px;
+  font-family: serif;
+  color: var(--textAlternate);
+}
+
+button {
+  font-size: 20px;
+}
+
+.answer-button {
+  width: 300px;
+}
+
+.answer-message {
+  color: var(--textAlternate);
+}
+
+li {
+  list-style: none;
+}
