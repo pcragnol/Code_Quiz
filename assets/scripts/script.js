@@ -15,8 +15,6 @@ var currentQuestion;
 var score;
 var timer;
 var timerCount;
-// var timerMini;
-// var timerCountMini;
 var endGameMessage = ["THANK", "YOU", "FOR", "PLAYING"];
 var playAgainMessage = ["ARE", "YOU", "READY", "TO PLAY?"];
 
@@ -178,11 +176,10 @@ function renderQuestion() {
 
 // checkAnswer function called when player clicks any answer button
 function checkAnswer(event) {
-  // If the chosen answer matches the correct answer, inform user and add 10 points to score
+  // If the chosen answer matches the correct answer, inform player and add 10 points to score
   if (event.target.textContent === questions[currentQuestion].answers[(questions[currentQuestion].correctAnswer)]) {
     score = score + 10;
     answerMessage.textContent = "Correct! 10 points!";
-    // // correctAnswer()
     // Otherwise, subtract 5 seconds from timer
   } else {
     timerCount = timerCount - 5;
@@ -202,12 +199,12 @@ function checkAnswer(event) {
 }
 
 // The following function was drafted to display answer responses only for a few seconds.
-// I scrapped the idea for now but might return to it later.
+// I scrapped the idea for now but might revisit it later.
 
 // function correctAnswer() {
 //   answerMessage.textContent = "Correct! 10 points!";
-//   timerCountMini = 1;
-//   timerMini = setInterval(function () {
+//   var timerCountMini = 1;
+//   var timerMini = setInterval(function () {
 //     timerCountMini--;
 //     if (timerCountMini === 0) {
 //       clearInterval(timerMini);
